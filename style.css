@@ -4,7 +4,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    max-width: 1280px;
 }
 
 body {
@@ -13,15 +12,14 @@ body {
     background-color: #FAFAF9;
 }
 
-@media (min-width: 640px) {
-    .container {
+.container {
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
         align-items: center;
-        margin: 200px 72px;
-        width: 100%;
+        margin: 10% 5% 10% 5%;
     }
-}
 
 .star {
     width: 45px;
@@ -89,7 +87,8 @@ body {
 
 .google, .meta {
     width: 350px;
-    background-color: #D4D4D8;
+    background-color: #FFFFFF;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
     border-radius: 10px;
     padding: 35px;
 }
@@ -109,15 +108,10 @@ body {
     margin-bottom: 0.7rem;
 }
 
-@media screen and (max-width: 767px) { 
+@media screen and (max-width: 720px) { 
     .container {
         flex-direction: column;
-        margin: 150px 20px;
+        align-items: center;
+        max-width: 700px;
     }
-    
-    .container-left, .container-right {
-        width: 100%;
-        margin-bottom: 1.5rem;
-    }
-    
 }
